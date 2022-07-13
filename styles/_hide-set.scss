@@ -1,0 +1,50 @@
+/*Hide sets*/
+
+  /* for mobile */
+.hidden {
+    display: none;
+  }
+  
+  /* for tablet */
+
+  @media (min-width: 768px) {
+    .tablet-hidden {
+      display: none;
+    }
+  
+    .tablet-inline {
+      display: inline;
+    }
+  
+    .tablet-block {
+      display: block;
+    }
+  
+    .tablet-flex {
+      display: flex;
+    }
+  
+    .tablet-grid {
+      display: grid;
+    }
+  }
+  
+  /* for desktop */
+  
+  @media (min-width: 1440px) {
+    .desktop-hidden {
+      display: none;
+    }
+  
+    .desktop-inline {
+      display: inline;
+    }
+  
+    .desktop-block {
+      display: block;
+    }
+  
+    .desktop-flex {
+      display: flex;
+    }
+  }
