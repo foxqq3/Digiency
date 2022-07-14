@@ -1,0 +1,90 @@
+.main-preview {
+    @include width-control;
+    padding: 50px 0 50px;
+    &__img-container {
+        margin: 0 20px;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        margin: 50px 48px 0;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    &__description {
+        margin: 18px 40px 0;
+        text-align: center;
+        color: $gray;
+    }
+
+    &__btn {
+        margin: 18px auto 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        //значение в пикселях как-то опоменять?
+        grid-template-rows: min-content 90px min-content;
+        column-gap: 18px;
+        padding: 50px 40px 74px 52px;
+        &__img-container {
+            grid-column: 2;
+            grid-row: 1/4;
+            margin: 16px 0 0;
+        }
+
+        &__title {
+            margin: auto 0 0 0;
+            max-width: 470px;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: left;
+        }
+
+        &__description {
+            margin: 18px 0 0;
+            max-width: 470px;
+            text-align: left;
+        }
+
+        &__btn {
+            margin:25px auto auto 0;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-preview {
+        padding: 150px 135px;
+        &__img-container {
+            margin: 0;
+        }
+
+        &__img {
+            max-width: 640px;
+        }
+
+        &__title {
+            width: 440px;
+            font-size: 48px;
+            line-height: 60px;
+        }
+
+        &__description {
+            max-width: 490px;
+        }
+        &__btn {
+            margin-top: 50px;
+        }
+    }
+}

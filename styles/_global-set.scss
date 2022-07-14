@@ -20,10 +20,6 @@ body {
     color: $black;
 }
 
-.page_set {
-    max-width: 1440px;
-}
-
 h1,
 h2,
 h3,
@@ -33,6 +29,29 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+
 ul li {
     list-style: none;
+}
+
+.btn {
+    display: block;
+    height: 50px;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+    background-color: $orange;
+    border-radius: 5px;
+    filter: drop-shadow(4px 5px 8px $irange-shadow);
+}
+
+.text_orange {
+    color: $orange;
+}
+
+@mixin width-control {
+    max-width: 1440px;
+    margin: 0 auto;
 }
